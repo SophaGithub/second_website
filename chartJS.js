@@ -4,7 +4,7 @@ const myChart = new Chart(ctx1, {
     data: {
         labels: ['ភ្នំពេញ', 'បណ្ដាខេត្ត', 'ផ្សេងៗ'],
         datasets: [{
-            label: '# of Votes',
+            label: '# ស្ថិតិ',
             data: [600, 800, 1000],
             backgroundColor: [
                 'rgba(54, 162, 235, 1)',
@@ -27,7 +27,7 @@ const myChart2 = new Chart(ctx2, {
         labels: ['ភ្នំពេញ', 'បណ្ដាខេត្ត', 'ផ្សេងៗ'],
         datasets: [
             {
-            label: '# of Votes',
+            label: '# ស្ថិតិ',
             data: [600, 800, 1000],
             backgroundColor: [
                 'rgba(54, 162, 235, 1)',
