@@ -319,7 +319,7 @@ body {
 }
 .status.delivered{
     padding: 2px 4px;
-    background: #77dd02;
+    background: #009432;
     color: var(--white);
     border-radius: 4px;
     font-size: 14px;
@@ -327,7 +327,7 @@ body {
 }
 .status.peding{
     padding: 2px 4px;
-    background: #dda302;
+    background: #EE5A24;
     color: var(--white);
     border-radius: 4px;
     font-size: 14px;
@@ -335,7 +335,7 @@ body {
 }
 .status.return{
     padding: 2px 4px;
-    background: #dd0202;
+    background: #EA2027;
     color: var(--white);
     border-radius: 4px;
     font-size: 14px;
@@ -343,7 +343,7 @@ body {
 }
 .status.inProgress{
     padding: 2px 4px;
-    background: #024fdd;
+    background: #1B1464;
     color: var(--white);
     border-radius: 4px;
     font-size: 14px;
