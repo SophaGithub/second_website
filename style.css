@@ -145,7 +145,7 @@ body {
     top: 0;
     width: 60px;
     height: 60px;
-    background:rgb(255, 255, 255);
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,6 +204,10 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
 }
+.card{
+    border-radius: 20px;
+    border: 1px solid var(--blue);
+}
 
 .cardBox .card{
     position: relative;
@@ -245,7 +249,23 @@ body {
     color: var(--white);
 }
 
-
+.chartsBox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+}
+.chartsBox .chart{
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    border: 1px solid var(--blue);
+}
 .details{
     position: relative;
     width: 100%;
@@ -393,4 +413,69 @@ body {
 }
 .recentCustomers table tr:hover td h4 span{
     color: var(--white);
+}
+
+@media(max-width: 991px){
+    .chartsBox{
+        grid-template-columns: 1fr;
+        height: auto;
+
+    }
+    .navigation{
+        left: 300px;
+    }
+    .navigation.active{
+        width: 300px;
+        left: 0;
+    }
+    .main{
+        width: 100%;
+        left: 0;
+    }
+    .main.active{
+        left: 300px;
+    }
+    .cardBox{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px){
+    .details{
+        grid-template-columns: 1fr;
+    }
+    .recentOrders{
+        overflow-x: auto;
+    }
+    .status.inProgress{
+        white-space: nowrap;
+    }
+}
+@media(max-width: 480px){
+    .cardBox{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cardHeader h2{
+        font-size: 20px;
+    }
+    .user{
+        min-width: 40px;
+    }
+    .navigation{
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+    }
+    .navigation.active{
+        width: 100%;
+        left: 0;
+    }
+    .toggle{
+        z-index: 10001;
+    }
+    .main.active .toggle{
+        color: #fff;
+        position: flex;
+        right: 0;
+        left: initial;
+    }
 }
