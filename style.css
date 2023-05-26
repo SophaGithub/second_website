@@ -288,6 +288,10 @@ body {
     box-shadow: 0 7px 25px rgb(0, 0, 0, 0.08);
     border-radius: 20px;
 }
+.recentOrders{
+    border-radius: 20px;
+    border: 1px solid var(--blue);
+}
 .details .cardHeader {
     display: flex;
     justify-content: space-between;
@@ -381,6 +385,10 @@ body {
     background: var(--white);
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
+}
+.recentCustomers{
+    border-radius: 20px;
+    border: 1px solid var(--blue);
 }
 .recentCustomers .imgBx {
     position: relative;
